@@ -18,18 +18,6 @@
             }
         }
     }
-    .overlay {
-        // display: none;
-        opacity: 0;
-        position: fixed;
-        top: 4.375rem;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: $secondary-color;
-        background-image: linear-gradient($darkBlue, transparent);
-        animation: fade-out 300ms ease-in-out forwards;
-    }
     nav {
         padding: 1.0625rem 1.5rem;
         background-color: $primary-color;
@@ -40,7 +28,7 @@
         color: $text-color2;
         font-family: "Ubuntu", sans-serif;
         h1 {
-            padding-top: 3px;
+            padding-top: 10px;
         }
         img {
             width: 3.175rem;

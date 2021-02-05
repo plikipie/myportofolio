@@ -58,43 +58,86 @@ a:visited {
 
 @keyframes fade-in {
   from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
 @keyframes fade-out {
   from {
+    visibility: visible;
     opacity: 1;
   }
-  to {
+  99% {
+    visibility: visible;
     opacity: 0;
   }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+.has-fade {
+  visibility: hidden;
 }
 
 @keyframes fade-in {
   from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
+}
+
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
   from {
+    visibility: visible;
     opacity: 1;
   }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
   to {
+    visibility: hidden;
     opacity: 0;
   }
 }
 
-.header.open .overlay {
-  display: block;
-  animation: fade-in 300ms ease-in-out forwards;
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+.has-fade {
+  visibility: hidden;
 }
 
 .header.open .header__toggle > span:first-child {
@@ -112,16 +155,15 @@ a:visited {
 .header .overlay {
   opacity: 0;
   position: fixed;
-  top: 5.775rem;
+  top: 0;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #393e46;
-  background-image: linear-gradient(#101a28, transparent);
-  animation: fade-out 300ms ease-in-out forwards;
+  background-image: linear-gradient(transparent, #101a28);
 }
 
 .header nav {
+  position: relative;
   padding: 1.0625rem 1.5rem;
   background-color: #222831;
 }

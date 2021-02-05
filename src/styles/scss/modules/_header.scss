@@ -2,10 +2,9 @@
 @import "./animations";
 .header {
     &.open {
-        .overlay {
-            display: block;
-            animation: fade-in 300ms ease-in-out forwards;
-        }
+        // .overlay {
+        //     display: block;
+        //     animation: fade-in 300ms ease-in-out forwards;
         .header__toggle {
             >span:first-child {
                 transform: rotate(45deg);
@@ -22,15 +21,14 @@
         // display: none;
         opacity: 0;
         position: fixed;
-        top: 5.775rem;
+        top: 0;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-color: $secondary-color;
-        background-image: linear-gradient($darkBlue, transparent);
-        animation: fade-out 300ms ease-in-out forwards;
+        background-image: linear-gradient(transparent, $darkBlue);
     }
     nav {
+        position: relative;
         padding: 1.0625rem 1.5rem;
         background-color: $primary-color;
     }

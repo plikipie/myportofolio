@@ -1,0 +1,33 @@
+@import "./color";
+@import "./animations";
+.hero {
+    &__image {
+        background-image: url("/src/assets/img/hero-bg.svg");
+    }
+    &__text {}
+}
+
+// section.hero {
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-between;
+// }
+// .hero__image img {
+//     position: absolute;
+//     top: 40;
+//     right: 0;
+//     z-index: -999;
+// }
+// .hero__text {
+//     width: 50%;
+//     padding-top: 124px;
+//     margin-left: 80px;
+//     h1 {
+//         font-size: 64px;
+//         font-weight: 700;
+//         color: $text-color2;
+//     }
+//     p {
+//         font-size: $font-med;
+//     }
+// }

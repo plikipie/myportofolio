@@ -25,7 +25,7 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-image: linear-gradient(transparent, $darkBlue);
+        background-image: linear-gradient($darkBlue, transparent);
     }
     nav {
         position: relative;
@@ -34,11 +34,12 @@
     }
     &__logo {
         display: flex;
-        align-items: flex-start;
-        color: $text-color2;
-        font-family: "Ubuntu", sans-serif;
+        align-items: center;
+        color: $secondary-color;
+        font-family: "Quicksand", sans-serif;
         h1 {
-            padding-top: 10px;
+            font-weight: 700;
+            padding-top: 20px;
         }
         img {
             width: 3.175rem;
@@ -61,13 +62,14 @@
     &__links {
         a {
             font-size: $font-med;
-            color: $text-color;
+            font-weight: 700;
+            color: $secondary-color;
             margin-right: 32px;
             padding: 12px;
         }
         a:hover {
-            color: lighten($color: $text-color, $amount: 10%);
-            border-bottom: 2px solid lighten($color: $text-color, $amount: 20%);
+            color: lighten($color: $secondary-color, $amount: 10%);
+            border-bottom: 2px solid lighten($color: $text-color2, $amount: 20%);
         }
     }
     &__menu {
@@ -82,8 +84,9 @@
         a {
             display: block;
             text-align: center;
-            color: $text-color;
+            color: $secondary-color;
             padding: 0.625rem;
+            font-weight: 400;
         }
     }
 }

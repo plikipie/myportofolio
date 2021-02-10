@@ -32,9 +32,37 @@ a:visited {
   text-decoration: none;
 }
 
-.container {
+.container--pall {
+  padding-top: 2.25rem !important;
+  padding-bottom: 2.25rem !important;
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
+}
+
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.container--px {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.container--pt {
+  padding-top: 2.25rem;
+}
+
+.container--pb {
+  padding-bottom: 2.25rem;
+}
+
+.container--pl {
+  padding-left: 1.5rem;
+}
+
+.container--pr {
+  padding-right: 1.5rem;
 }
 
 .flex {
@@ -64,7 +92,7 @@ a:visited {
   border-radius: 50px;
   border: 2px solid #ffffff;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 a.button__primary:hover {
@@ -78,7 +106,7 @@ a.button__primary:hover {
   border-radius: 50px;
   border: 2px solid white;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .button__secondary {
@@ -91,20 +119,20 @@ a.button__primary:hover {
   border-radius: 50px;
   border: 2px solid #000306;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 a.button__secondary:hover {
   font-size: 1.125rem;
   font-weight: 700;
   font-family: "Quicksand", sans-serif;
-  background-color: #ffffff;
-  color: #000306;
+  background-color: #000306;
+  color: #fbcf18;
   padding: 0.7rem 1.875rem;
   border-radius: 50px;
-  border: 2px solid #ffffff;
+  border: 2px solid #000306;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 63.9375em) {
@@ -227,8 +255,8 @@ a.button__secondary:hover {
 
 .header nav {
   position: relative;
-  padding: 1.0625rem 1.5rem;
-  background-color: #fbcf18;
+  padding: 0px 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .header__logo {
@@ -264,7 +292,7 @@ a.button__secondary:hover {
   font-weight: 700;
   color: #000306;
   margin-right: 32px;
-  padding: 12px;
+  padding: 11px 0px;
 }
 
 .header__links a:hover {
@@ -336,25 +364,28 @@ a.button__secondary:hover {
 @media (min-width: 64em) {
   .hero {
     display: flex;
-    order: 2;
     align-items: center;
+    flex: 3;
+    order: 2;
   }
 }
 
 .hero__image {
   position: relative;
   background-image: url("/src/assets/img/hero-bg.svg");
-  background-size: 92%;
   background-repeat: no-repeat;
-  background-position: top right;
-  min-height: 23rem;
+  background-size: cover;
+  background-position: center center;
+  min-height: 23.5rem;
 }
 
 @media (min-width: 64em) {
   .hero__image {
+    height: 41rem;
     flex: 1;
-    order: 1;
-    min-height: 41rem;
+    order: 2;
+    background-image: url("/src/assets/img/hero-bg.svg");
+    background-position: top left;
   }
 }
 
@@ -363,7 +394,7 @@ a.button__secondary:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/src/assets/img/hero-il.svg");
+  background-image: url("/src/assets/img/hero-il-dekstop.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -371,6 +402,16 @@ a.button__secondary:hover {
 .hero__text {
   text-align: center;
   padding: 1em;
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 1;
+    order: 1;
+  }
+  .hero__text h1 {
+    font-size: 3.5rem !important;
+  }
 }
 
 .hero__text h1 {

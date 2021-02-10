@@ -3,27 +3,30 @@
 .hero {
     @include breakpoint-up(large) {
         display: flex;
-        order: 2;
         align-items: center;
+        flex: 3;
+        order: 2;
     }
     &__image {
         position: relative;
         background-image: url("/src/assets/img/hero-bg.svg");
-        background-size: 92%;
         background-repeat: no-repeat;
-        background-position: top right;
-        min-height: 23rem;
+        background-size: cover;
+        background-position: center center;
+        min-height: 23.5rem;
         @include breakpoint-up(large) {
+            height: 41rem;
             flex: 1;
-            order: 1;
-            min-height: 41rem;
+            order: 2;
+            background-image: url("/src/assets/img/hero-bg.svg");
+            background-position: top left;
         }
         &::before {
             content: "";
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url("/src/assets/img/hero-il.svg");
+            background-image: url("/src/assets/img/hero-il-dekstop.svg");
             background-size: 100%;
             background-repeat: no-repeat;
         }
@@ -31,6 +34,13 @@
     &__text {
         text-align: center;
         padding: 1em;
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 1;
+            h1 {
+                font-size: 3.5rem !important;
+            }
+        }
         h1 {
             font-weight: 700;
             font-size: 1.75rem;

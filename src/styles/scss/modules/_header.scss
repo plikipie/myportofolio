@@ -29,8 +29,8 @@
     }
     nav {
         position: relative;
-        padding: 1.0625rem 1.5rem;
-        background-color: $primary-color;
+        padding: 0px 1.5rem;
+        background-color: rgba($color: $text-color2, $alpha: 0.2);
     }
     &__logo {
         display: flex;
@@ -65,7 +65,7 @@
             font-weight: 700;
             color: $secondary-color;
             margin-right: 32px;
-            padding: 12px;
+            padding: 11px 0px;
         }
         a:hover {
             color: lighten($color: $secondary-color, $amount: 10%);

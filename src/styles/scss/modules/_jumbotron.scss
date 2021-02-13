@@ -37,23 +37,20 @@
         @include breakpoint-up(large) {
             flex: 1;
             order: 1;
-            text-align: left;
             h1 {
-                font-size: 6rem !important;
-                line-height: 0.2 !important;
-                color: $secondary-color;
+                font-size: 3.5rem !important;
             }
         }
         h1 {
             font-weight: 700;
             font-size: 1.75rem;
             line-height: 1.5;
-            color: $secondary-color;
+            color: $text-color2;
         }
         p {
             font-size: $font-med;
             font-weight: 500;
-            color: $secondary-color;
+            color: $text-color2;
             margin-bottom: 2.31rem;
         }
     }

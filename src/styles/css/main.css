@@ -408,12 +408,9 @@ a.button__secondary:hover {
   .hero__text {
     flex: 1;
     order: 1;
-    text-align: left;
   }
   .hero__text h1 {
-    font-size: 6rem !important;
-    line-height: 0.2 !important;
-    color: #000306;
+    font-size: 3.5rem !important;
   }
 }
 
@@ -421,13 +418,13 @@ a.button__secondary:hover {
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 1.5;
-  color: #000306;
+  color: #ffffff;
 }
 
 .hero__text p {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #000306;
+  color: #ffffff;
   margin-bottom: 2.31rem;
 }
 /*# sourceMappingURL=main.css.map */

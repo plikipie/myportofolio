@@ -1,7 +1,6 @@
 @import "./color";
 @import "./animations";
 .hero {
-    background-color: $primary-color;
     @include breakpoint-up(large) {
         display: flex;
         align-items: center;
@@ -10,7 +9,7 @@
     }
     &__image {
         position: relative;
-        background-image: url("/src/assets/img/hero-bg.svg");
+        background-image: url("/src/assets/img/Ellipse-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -19,7 +18,7 @@
             height: 41rem;
             flex: 1;
             order: 2;
-            background-image: url("/src/assets/img/hero-bg.svg");
+            background-image: url("/src/assets/img/Ellipse-bg.svg");
             background-position: top left;
         }
         &::before {
@@ -27,7 +26,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url("/src/assets/img/hero-il-dekstop.svg");
+            background-image: url("/src/assets/img/hero-il.svg");
             background-size: 100%;
             background-repeat: no-repeat;
         }

@@ -366,10 +366,6 @@ a.button__secondary:hover {
   visibility: hidden;
 }
 
-.hero {
-  background-color: #fbcf18;
-}
-
 @media (min-width: 64em) {
   .hero {
     display: flex;
@@ -381,7 +377,7 @@ a.button__secondary:hover {
 
 .hero__image {
   position: relative;
-  background-image: url("/src/assets/img/hero-bg.svg");
+  background-image: url("/src/assets/img/Ellipse-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -393,7 +389,7 @@ a.button__secondary:hover {
     height: 41rem;
     flex: 1;
     order: 2;
-    background-image: url("/src/assets/img/hero-bg.svg");
+    background-image: url("/src/assets/img/Ellipse-bg.svg");
     background-position: top left;
   }
 }
@@ -403,7 +399,7 @@ a.button__secondary:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/src/assets/img/hero-il-dekstop.svg");
+  background-image: url("/src/assets/img/hero-il.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

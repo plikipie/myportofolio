@@ -9,6 +9,9 @@ body {
     background-color: $primary-color;
     color: $secondary-color;
     font-weight: 300;
+    @include breakpoint-up(large) {
+        font-size: 1.25rem;
+    }
     &.noscroll {
         overflow: hidden;
     }
@@ -33,8 +36,8 @@ a:visited {
 }
 
 .container {
-    // max-width: 69.375rem;
-    // margin: 0px auto;
+    max-width: 69.375rem;
+    margin: 0px auto;
     &--pall {
         padding-top: 2.25rem !important;
         padding-bottom: 2.25rem !important;

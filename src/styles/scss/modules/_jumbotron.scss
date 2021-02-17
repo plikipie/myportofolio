@@ -1,34 +1,62 @@
 @import "./color";
 @import "./animations";
 .hero {
-    @include breakpoint-up(large) {
-        display: flex;
-        align-items: center;
-        flex: 3;
-        order: 2;
+    .container {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
     }
     &__image {
         position: relative;
-        background-image: url("/src/assets/img/Ellipse-mobile.svg");
+        // background-image: url("/src/assets/img/Ellipse-mobile.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        min-height: 23.5rem;
+        background-size: 92%;
+        background-position: top right;
+        min-height: 25.5rem;
         @include breakpoint-up(large) {
             height: 41rem;
             flex: 1;
             order: 2;
-            background-image: url("/src/assets/img/Ellipse-bg.svg");
-            background-position: top left;
+            background-image: none;
+            // background-image: url("/src/assets/img/Ellipse-bg.svg");
+            // background-position: top right;
         }
         &::before {
             content: "";
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url("/src/assets/img/hero-il.svg");
-            background-size: 100%;
+            background-image: url("/src/assets/img/Ellipse-bg.svg");
+            background-size: 94%;
             background-repeat: no-repeat;
+            background-position: center right;
+            @include breakpoint-up(large) {
+                width: 120%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: right 50%;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("/src/assets/img/hero-il.svg");
+            background-size: 89%;
+            background-repeat: no-repeat;
+            background-position: center right;
+            @include breakpoint-up(large) {
+                content: "";
+                position: absolute;
+                width: 124%;
+                height: 100%;
+                background-image: url("/src/assets/img/hero-il.svg");
+                background-size: 93%;
+                background-repeat: no-repeat;
+                background-position: center right;
+            }
         }
     }
     &__text {
@@ -37,6 +65,7 @@
         @include breakpoint-up(large) {
             flex: 1;
             order: 1;
+            text-align: left;
             h1 {
                 font-size: 3.5rem !important;
             }
@@ -46,6 +75,9 @@
             font-size: 1.75rem;
             line-height: 1.5;
             color: $text-color2;
+            @include breakpoint-up(large) {
+                font-size: 3.25rem;
+            }
         }
         p {
             font-size: $font-med;

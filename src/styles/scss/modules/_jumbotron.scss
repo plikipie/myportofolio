@@ -1,6 +1,7 @@
 @import "./color";
 @import "./animations";
 .hero {
+    background-color: $primary-color;
     @include breakpoint-up(large) {
         display: flex;
         align-items: center;

@@ -231,6 +231,11 @@ a.button__secondary:hover {
   visibility: hidden;
 }
 
+.header {
+  position: relative;
+  z-index: 1;
+}
+
 .header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
@@ -256,7 +261,7 @@ a.button__secondary:hover {
 .header nav {
   position: relative;
   padding: 0px 1.5rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fbcf18;
 }
 
 .header__logo {
@@ -359,6 +364,10 @@ a.button__secondary:hover {
 
 .has-fade {
   visibility: hidden;
+}
+
+.hero {
+  background-color: #fbcf18;
 }
 
 @media (min-width: 64em) {

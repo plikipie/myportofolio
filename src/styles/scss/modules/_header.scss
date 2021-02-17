@@ -1,6 +1,8 @@
 @import "./color";
 @import "./animations";
 .header {
+    position: relative;
+    z-index: 1;
     &.open {
         // .overlay {
         //     display: block;
@@ -30,7 +32,7 @@
     nav {
         position: relative;
         padding: 0px 1.5rem;
-        background-color: rgba($color: $text-color2, $alpha: 0.2);
+        background-color: $primary-color;
     }
     &__logo {
         display: flex;

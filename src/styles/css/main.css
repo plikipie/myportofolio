@@ -389,7 +389,14 @@ a.button__secondary:hover {
   background-repeat: no-repeat;
   background-size: 92%;
   background-position: top right;
-  min-height: 25.5rem;
+  min-height: 28.5rem;
+}
+
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: top right;
+  }
 }
 
 @media (min-width: 64em) {
@@ -409,15 +416,14 @@ a.button__secondary:hover {
   background-image: url("/src/assets/img/Ellipse-bg.svg");
   background-size: 94%;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: top right;
 }
 
 @media (min-width: 64em) {
   .hero__image::before {
-    width: 120%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: right 50%;
+    width: 150%;
+    background-size: 72%;
+    background-position: 0% 83%;
   }
 }
 
@@ -432,16 +438,19 @@ a.button__secondary:hover {
   background-position: center right;
 }
 
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image::after {
-    content: "";
-    position: absolute;
-    width: 124%;
-    height: 100%;
-    background-image: url("/src/assets/img/hero-il.svg");
-    background-size: 93%;
-    background-repeat: no-repeat;
-    background-position: center right;
+    width: 120%;
+    height: 122%;
+    background-size: 75%;
+    background-position: center 15%;
+    left: 1%;
   }
 }
 
@@ -465,7 +474,7 @@ a.button__secondary:hover {
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 1.5;
-  color: #ffffff;
+  color: #000306;
 }
 
 @media (min-width: 64em) {
@@ -477,7 +486,7 @@ a.button__secondary:hover {
 .hero__text p {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #000306;
   margin-bottom: 2.31rem;
 }
 /*# sourceMappingURL=main.css.map */

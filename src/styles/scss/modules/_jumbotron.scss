@@ -13,7 +13,11 @@
         background-repeat: no-repeat;
         background-size: 92%;
         background-position: top right;
-        min-height: 25.5rem;
+        min-height: 28.5rem;
+        @include breakpoint-up(medium) {
+            min-height: 25rem;
+            background-position: top right;
+        }
         @include breakpoint-up(large) {
             height: 41rem;
             flex: 1;
@@ -30,12 +34,15 @@
             background-image: url("/src/assets/img/Ellipse-bg.svg");
             background-size: 94%;
             background-repeat: no-repeat;
-            background-position: center right;
+            background-position: top right;
             @include breakpoint-up(large) {
-                width: 120%;
-                background-size: 100%;
-                background-repeat: no-repeat;
-                background-position: right 50%;
+                // width: 100%;
+                // background-size: 100%;
+                // background-repeat: no-repeat;
+                // background-position: right 50%;
+                width: 150%;
+                background-size: 72%;
+                background-position: 0% 83%;
             }
         }
         &::after {
@@ -47,15 +54,15 @@
             background-size: 89%;
             background-repeat: no-repeat;
             background-position: center right;
+            @include breakpoint-up(medium) {
+                background-size: 52%;
+            }
             @include breakpoint-up(large) {
-                content: "";
-                position: absolute;
-                width: 124%;
-                height: 100%;
-                background-image: url("/src/assets/img/hero-il.svg");
-                background-size: 93%;
-                background-repeat: no-repeat;
-                background-position: center right;
+                width: 120%;
+                height: 122%;
+                background-size: 75%;
+                background-position: center 15%;
+                left: 1%;
             }
         }
     }
@@ -74,7 +81,7 @@
             font-weight: 700;
             font-size: 1.75rem;
             line-height: 1.5;
-            color: $text-color2;
+            color: $secondary-color;
             @include breakpoint-up(large) {
                 font-size: 3.25rem;
             }
@@ -82,7 +89,7 @@
         p {
             font-size: $font-med;
             font-weight: 500;
-            color: $text-color2;
+            color: $secondary-color;
             margin-bottom: 2.31rem;
         }
     }
